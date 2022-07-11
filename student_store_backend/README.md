@@ -8,7 +8,7 @@ To get the environment up and running, install the dependencies with `npm instal
 
 Next, make sure to create a `.env` file from the `.env.template` file by running:
 
-```bash
+```bash 
 cp .env.template .env
 ```
 
