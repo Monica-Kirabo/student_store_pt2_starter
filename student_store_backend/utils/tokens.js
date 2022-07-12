@@ -19,6 +19,6 @@ const validateToken=(token)=>{
     }
   
 }
-ViewModuleSharp.exports={
+module.exports={
     generateToken,createUserJwt,validateToken
 }
