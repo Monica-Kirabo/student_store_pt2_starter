@@ -14,7 +14,7 @@ CREATE TABLE products (
     category    TEXT NOT NULL,
     image     TEXT NOT NULL,
     description TEXT NOT NULL,
-    price    BIGINT
+    price    BIGINT   NOT NULL DEFAULT 0
 
  
 );

@@ -1,6 +1,9 @@
+const express = require("express")
 const security=require( "../middleware/security")
-const order=require("../models/Order")
-router.get("/", (req, res,next) => {
+const order=require("../models/orders")
+
+const router = express.Router()
+router.get("/",  security.requireAuthenticatedUser,(req, res,next) => {
     try{
         const {user}=res.locals
         const orders =order.listOrdersForUser({user,orders:req.body});

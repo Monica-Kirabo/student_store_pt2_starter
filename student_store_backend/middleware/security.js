@@ -9,7 +9,7 @@ const jwtFrom=({headers})=>{
             return token
         }
     }
-    return  undefined
+    return  null
 }
 
 const extractUserFromJwt=(req,res,next)=>{
